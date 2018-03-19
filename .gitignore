@@ -1,0 +1,8 @@
+.condaauto
+.vscode
+**/.ropeproject
+app/client/node_modules
+app/client/dist
+app/server/**/__pycache__
+app/server/**/.pytest_cache
+app/server/**/*.pyc

@@ -1,0 +1,20 @@
+matrix:
+  include:
+    - language: python
+      python: 3.6
+      before_install:
+        - cd app/server
+      install:
+        - pip install -r requirements.txt
+      script:
+        - pytest
+
+    - language: node_js
+      node_js: 8
+      before_install:
+        - cd app/client
+      install:
+        - yarn install
+      script:
+        - yarn build
+
